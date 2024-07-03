@@ -1,0 +1,148 @@
+.container-message {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-message img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgb(209, 156, 151);
+}
+
+.chat-content {
+    display: none;
+}
+
+.chat-box {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.message-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(209, 156, 151);
+}
+
+.message-header .avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-info p {
+    margin: 0;
+    font-weight: bold;
+    color: white;
+}
+
+.body-message {
+    padding: 10px;
+    background-color: white;
+    overflow-y: auto;
+    max-height: 300px;
+    height: 300px; 
+}
+
+.incoming-message,
+.outgoing-message {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.incoming-message .avatar img,
+.outgoing-message .avatar img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.message-content {
+    background-color: #f0f0f0;
+    padding: 8px 12px;
+    border-radius: 10px;
+}
+
+.outgoing-message {
+    display: flex;
+    justify-content: flex-end; /* Hiển thị ở phía bên phải */
+    margin-bottom: 10px;
+}
+
+.outgoing-message .message-content {
+    background-color: #DCF8C6; /* Màu nền của tin nhắn gửi đi */
+    color: #000; /* Màu chữ của tin nhắn gửi đi */
+    border-radius: 10px;
+    padding: 8px 12px;
+    max-width: 70%; /* Giới hạn chiều rộng của tin nhắn gửi đi */
+    text-align: right; /* Căn lề phải */
+}
+
+.outgoing-message .avatar img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 10px; /* Khoảng cách giữa tin nhắn và avatar */
+}
+
+.message-content p {
+    margin: 0;
+}
+
+.time {
+    font-size: 12px;
+    color: #666;
+}
+
+.input-field {
+    display: flex;
+    padding: 10px;
+    background-color: rgb(237,241,255);
+}
+
+.input-field input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.input-field button {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(209, 156, 151);
+    color: #fff;
+    cursor: pointer;
+}
+
+.input-field button:hover {
+    background-color: rgb(204, 103, 94);
+}
+
+.close-btn {
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: auto;
+    color: white;
+    border: none;
+}
+
+.close-btn i {
+    font-size: 20px;
+}
